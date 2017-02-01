@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ee491e-iot
+  host: ee491e-iot
+  disk_quota: 1024M
+  services:
+  - ee491e-iot-cloudantNoSQLDB
+  - ee491e-iot-iotf-service
+  env:
+    NODE_RED_USERNAME: ee491e
+    NODE_RED_PASSWORD: ee491e_iot
